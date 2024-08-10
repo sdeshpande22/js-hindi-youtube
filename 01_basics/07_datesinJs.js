@@ -30,3 +30,37 @@ newDate.toLocaleString('default', {
     
 })
 
+let date = new Date(); // Current date
+date.setDate(date.getDate() + 5); // Adds 5 days
+console.log(date);
+
+date.setMonth(date.getMonth() + 2); // Adds 2 months
+console.log(date);
+
+date.setFullYear(date.getFullYear() + 1); // Adds 1 year
+console.log(date);
+
+date.setHours(date.getHours() + 4); // Adds 4 hours
+console.log(date);
+
+date.setMinutes(date.getMinutes() + 30); // Adds 30 minutes
+console.log(date);
+
+date.setSeconds(date.getSeconds() + 45); // Adds 45 seconds
+console.log(date);
+
+date.setMilliseconds(date.getMilliseconds() + 500); // Adds 500 milliseconds
+console.log(date);
+
+// To add 1 day and 6 hours to the current time in JavaScript
+
+// Add 1 day
+date.setDate(date.getDate() + 1);
+// Add 6 hours
+date.setHours(date.getHours() + 6);
+console.log(date);
+
+date.setDate(date.getDate() + 2) + date.setHours(date.getHours() + 36);
+console.log(date);
+
+
