@@ -1,39 +1,56 @@
+console.log("***********************1*****************")
 const coding = ["js", "ruby", "java", "python", "cpp"]
 
-// coding.forEach( function (val){
-//     console.log(val);
-// } )
+//foreach expects a callback function. Callback function doesnt have name.
+//1
+coding.forEach(function (item) {
+    console.log(item);
+    
+})
+console.log("***********************2*****************")
+//2
+coding.forEach((val) => {
+    console.log(val);
+    
+})
+console.log("***********************3*****************")
+//3
+function myfunction(item) {
+    console.log(item)
+}
+coding.forEach(myfunction) // here only function reference should be called, not execution ()
 
-// coding.forEach( (item) => {
-//     console.log(item);
-// } )
-
-// function printMe(item){
-//     console.log(item);
-// }
-
-// coding.forEach(printMe)
-
-// coding.forEach( (item, index, arr)=> {
-//     console.log(item, index, arr);
-// } )
-
+console.log("***********************4*****************")
+//4
+coding.forEach((item,index,arr) => {
+    console.log(item,index,arr) //js 0 [ 'js', 'ruby', 'java', 'python', 'cpp' ]
+})
+console.log("***********************5*****************")
+// 5 - array of objects(key,value pair)
 const myCoding = [
     {
         languageName: "javascript",
-        languageFileName: "js"
+        extension: "js"
     },
     {
         languageName: "java",
-        languageFileName: "java"
+        extension: "java"
     },
     {
         languageName: "python",
-        languageFileName: "py"
+        extension: "py"
     },
 ]
 
-myCoding.forEach( (item) => {
+myCoding.forEach((item)=>{
+    console.log(item);
+    console.log(item.languageName)
+    console.log(item.extension)
     
-    console.log(item.languageName);
-} )
+})
+
+
+// myCoding.forEach( (item) => {
+    
+//     console.log(item.languageName);
+// } )
