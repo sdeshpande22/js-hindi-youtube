@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+<script>
+    function Hello(){
+        document.getElementById('demo5').innerHTML = 'JavaScript Changed you';
+    }
+</script>
+
+<body>
+    <h2>My First JavaScript</h2>
+    
+    <p id="demo"></p>
+    <button type="submit" onclick="document.getElementById('demo').innerHTML = Date()">Click Here</button>
+    
+    <p id = "welcome">JavaScript Can change the content</p>
+    <button type="submit" onclick="document.getElementById('welcome').innerHTML = 'Content changed'">Click me</button>
+
+    <p id="demo2">JavaScript can change the style of an HTML element.</p>
+    <button type="button" onclick="document.getElementById('demo2').style.fontSize='35px'">Click Me!</button>
+
+    <p id="demo3">JavaScript can hide HTML elements.</p>
+    <button type="button" onclick="document.getElementById('demo3').style.display='none'">Click Me!</button>
+    <br>
+    <br>
+    <br>
+    <p id="demo4" style="display:none">Display :Hello JavaScript!</p>
+    <button type="button" onclick="document.getElementById('demo4').style.display='block'">Click Me!</button>
+    <br>
+    <br>
+    <br>
+   <p id = "demo5">Wazzup, Change me</p>
+   <button type="button" onclick="Hello()">Click me First</button>
+
+</body>
+</html>
